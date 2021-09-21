@@ -15,6 +15,7 @@ public class Calculadora {
                 "2 - Subtraçao " +
                 "3 - Multiplicaçao " +
                 "4 - Divisao" +
+                "5 - Potencia" +
                 "0 - Para sair da calculadora");
         System.out.println("Digite a opçao desejada");
         n = teclado.nextInt();
