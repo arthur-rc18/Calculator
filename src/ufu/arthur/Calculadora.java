@@ -20,9 +20,11 @@ public class Calculadora  {
                 "6 - Raiz quadrada\n" +
                 "7 - Fatorial\n" +
                 "8 - Trigonometria\n" +
+                "9 - Porcentagem\n" +
                 "0 - Para sair da calculadora\n");
-        System.out.println("Digite a opçao desejada");
-        n = teclado.nextInt();
+        System.out.println("Digite a opçao desejada:");
+
+       n = teclado.nextInt();
 
         switch(n){
             case 1:
@@ -153,13 +155,16 @@ public class Calculadora  {
                 System.out.println("Qual operaçao voce deseja realizar:");
                 System.out.println("1 - Seno de um angulo\n" +
                         "2 - Cosseno de um angulo\n" +
-                        "3 - Tangente de um angulo\n");
+                        "3 - Tangente de um angulo\n" +
+                        "4 - Cossecante de um numero\n" +
+                        "5 - Secante de um numero\n" +
+                        "6 - Cotangente de um numero\n");
                 n = teclado.nextInt();
                 if (n == 1){
                     System.out.println("Digite o valor do angulo: ");
                     d1 = teclado.nextDouble();
                     double d3 = Math.toRadians(d1);
-                    System.out.println("O seno de " + d1 + " eh " + Math.sin(d3));
+                    System.out.println("O seno de " + d1 + "º eh " + Math.sin(d3));
                     System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
                     n = teclado.nextInt();
                     if (n == 0) {
@@ -173,7 +178,7 @@ public class Calculadora  {
                     System.out.println("Digite o valor do angulo: ");
                     d1 = teclado.nextDouble();
                     double d3 = Math.toRadians(d1);
-                    System.out.println("O cosseno de " + d1 + " eh " + Math.cos(d3));
+                    System.out.println("O cosseno de " + d1 + "º eh " + Math.cos(d3));
                     System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
                     n = teclado.nextInt();
                     if (n == 0) {
@@ -187,7 +192,7 @@ public class Calculadora  {
                     System.out.println("Digite o valor do angulo: ");
                     d1 = teclado.nextDouble();
                     double d3 = Math.toRadians(d1);
-                    System.out.println("A tangente de " + d1 + " eh " + Math.tan(d3));
+                    System.out.println("A tangente de " + d1 + "º eh " + Math.tan(d3));
                     System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
                     n = teclado.nextInt();
                     if (n == 0) {
@@ -197,14 +202,81 @@ public class Calculadora  {
                         act();
                     }
                     break;
+                } else if (n == 4){
+                    System.out.println("Digite o valor do angulo: ");
+                    d1 = teclado.nextDouble();
+                    double d3 = Math.toRadians(d1);
+                    if (d3 == 0 || d3 == 180 || d3 == 360){
+                        System.out.println("Angulo indefinido");
+                        cont();
+                        break;
+                    } else if (d3 != 0) {
+                        double d4 = 1 / Math.sin(d3);
+                        System.out.println("A cossecante de " + d3 + "º eh " + d4);
+                        cont();
+
+                    }
+                } else if (n == 5){
+                    System.out.println("Digite o valor do angulo: ");
+                    d1 = teclado.nextDouble();
+                    double d3 = Math.toRadians(d1);
+                    double d4 = 1 / Math.cos(d3);
+                    if (Math.cos(d3) == 0){
+                        System.out.println("Angulo indefinido");
+                        cont();
+                        break;
+                    } else if (d1 == 90 || d1 == 270){
+                        System.out.println("Angulo indefinido");
+                        cont();
+                        break;
+                    } else
+                        System.out.println("A secante de " + d3 + "º eh " + d4);
+                        cont();
+                } else if (n == 6){
+                    System.out.println("Digite o valor do angulo: ");
+                    d1 = teclado.nextDouble();
+                    double d3 = Math.toRadians(d1);
+                    double d4 = 1 / Math.tan(d3);
+                    if (d1 == 0){
+                        System.out.println("Angulo indefinido");
+                        cont();
+                        break;
+                    }
+                    System.out.println("A cotangente de " + d3 + "º eh " + d4);
+                    cont();
                 }
 
-            default:
+            case 9 :
+                System.out.println("Digite o valor da porcentagem:");
+                d1 = teclado.nextDouble();
+                System.out.println("Digite o valor do numero:");
+                d2 = teclado.nextDouble();
+                resultado = d2 * (d1/100);
+                System.out.println("O valor de " + d1 + "% " + " de " + d2 + " eh " + resultado);
+                cont();
+
+                default:
                 System.out.println("Opçao nao disponivel!!");
                 break;
         }
     }
 
+    public void cont(){
+        System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
+        int n;
+        n = teclado.nextInt();
+        switch (n){
+        case 0 :
+            System.out.println("Obrigado por usar a calculadora, volte sempre!");
+            break;
+        case 1 :
+            act();
+
+            default:
+                System.out.println("Opção indisponivel");
+        }
+
+    }
 
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
