@@ -162,6 +162,7 @@ public class Calculadora  {
                     } else
                         System.out.println("A secante de " + d3 + "º eh " + d4);
                         cont();
+                        break;
                 } else if (n == 6){
                     System.out.println("Digite o valor do angulo: ");
                     d1 = teclado.nextDouble();
@@ -204,8 +205,8 @@ public class Calculadora  {
 
             default:
                 System.out.println("Opção indisponivel");
+                break;
         }
-
     }
 
     public static void main(String[] args) {
