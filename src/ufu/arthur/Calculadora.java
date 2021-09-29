@@ -33,7 +33,6 @@ public class Calculadora  {
                 System.out.println("Digite o segundo numero: ");
                 n2 = teclado.nextFloat();
                 resultado = n1 + n2;
-                resultado = 6;
                 System.out.println("O resultado da soma eh = " + resultado);
                 cont();
             break;
@@ -207,10 +206,5 @@ public class Calculadora  {
                 System.out.println("Opção indisponivel");
                 break;
         }
-    }
-
-    public static void main(String[] args) {
-        Calculadora calc = new Calculadora();
-        calc.act();
     }
 }
