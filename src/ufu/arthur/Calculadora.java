@@ -35,14 +35,7 @@ public class Calculadora  {
                 resultado = n1 + n2;
                 resultado = 6;
                 System.out.println("O resultado da soma eh = " + resultado);
-                System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                n = teclado.nextInt();
-                if (n == 0) {
-                    System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                    break;
-                } else if (n == 1) {
-                    act();
-                }
+                cont();
             break;
 
             case 2:
@@ -52,14 +45,7 @@ public class Calculadora  {
                 n2 = teclado.nextFloat();
                 resultado = n1 - n2;
                 System.out.println("O resultado da subtraçao eh = " + resultado);
-                System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                n = teclado.nextInt();
-                if (n == 0) {
-                    System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                    break;
-                } else if (n == 1) {
-                    act();
-                }
+                cont();
             break;
 
             case 3:
@@ -69,14 +55,7 @@ public class Calculadora  {
                 n2 = teclado.nextFloat();
                 resultado = n1 * n2;
                 System.out.println("O resultado da multiplicacao eh = " + resultado);
-                System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                n = teclado.nextInt();
-                if (n == 0) {
-                    System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                    break;
-                } else if (n == 1) {
-                    act();
-                }
+               cont();
             break;
 
             case 4:
@@ -86,14 +65,7 @@ public class Calculadora  {
                 n2 = teclado.nextFloat();
                 resultado = n1 / n2;
                 System.out.println("O resultado da divisao eh = " + resultado);
-                System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                n = teclado.nextInt();
-                if (n == 0) {
-                    System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                    break;
-                } else if (n == 1) {
-                    act();
-                }
+                cont();
             break;
 
             case 5 :
@@ -103,14 +75,7 @@ public class Calculadora  {
                 d2 = teclado.nextDouble();
                 resultado = Math.pow(d1,d2);
                 System.out.println("O resultado da potenciaçao eh = " + resultado);
-                System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                n = teclado.nextInt();
-                if (n == 0) {
-                    System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                    break;
-                } else if (n == 1) {
-                    act();
-                }
+                cont();
                 break;
 
             case 6 :
@@ -118,14 +83,7 @@ public class Calculadora  {
                 d1 = teclado.nextDouble();
                 resultado = Math.sqrt(d1);
                 System.out.println("O resultado da raiz eh = " + resultado);
-                System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                n = teclado.nextInt();
-                if (n == 0) {
-                    System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                    break;
-                } else if (n == 1) {
-                    act();
-                }
+                cont();
                 break;
 
             case 7 :
@@ -141,14 +99,7 @@ public class Calculadora  {
                     resultado *= i;
                 }
                 System.out.println("O resultado do fatorial de " + d1 + " eh = " + resultado);
-                System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                n = teclado.nextInt();
-                if (n == 0) {
-                    System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                    break;
-                } else if (n == 1) {
-                    act();
-                }
+                cont();
                 break;
 
             case 8 :
@@ -165,52 +116,31 @@ public class Calculadora  {
                     d1 = teclado.nextDouble();
                     double d3 = Math.toRadians(d1);
                     System.out.println("O seno de " + d1 + "º eh " + Math.sin(d3));
-                    System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                    n = teclado.nextInt();
-                    if (n == 0) {
-                        System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                        break;
-                    } else if (n == 1) {
-                        act();
-                    }
+                    cont();
                     break;
                 } else if (n == 2){
                     System.out.println("Digite o valor do angulo: ");
                     d1 = teclado.nextDouble();
                     double d3 = Math.toRadians(d1);
                     System.out.println("O cosseno de " + d1 + "º eh " + Math.cos(d3));
-                    System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                    n = teclado.nextInt();
-                    if (n == 0) {
-                        System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                        break;
-                    } else if (n == 1) {
-                        act();
-                    }
+                    cont();
                     break;
                 } else if (n == 3){
                     System.out.println("Digite o valor do angulo: ");
                     d1 = teclado.nextDouble();
                     double d3 = Math.toRadians(d1);
                     System.out.println("A tangente de " + d1 + "º eh " + Math.tan(d3));
-                    System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
-                    n = teclado.nextInt();
-                    if (n == 0) {
-                        System.out.println("Obrigado por usar a calculadora, volte sempre!");
-                        break;
-                    } else if (n == 1) {
-                        act();
-                    }
+                    cont();
                     break;
                 } else if (n == 4){
                     System.out.println("Digite o valor do angulo: ");
                     d1 = teclado.nextDouble();
                     double d3 = Math.toRadians(d1);
-                    if (d3 == 0 || d3 == 180 || d3 == 360){
+                    if (d1 == 0 || d1 == 180 || d1 == 360){
                         System.out.println("Angulo indefinido");
                         cont();
                         break;
-                    } else if (d3 != 0) {
+                    } else if (d1 != 0) {
                         double d4 = 1 / Math.sin(d3);
                         System.out.println("A cossecante de " + d3 + "º eh " + d4);
                         cont();
