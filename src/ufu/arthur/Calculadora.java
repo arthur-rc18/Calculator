@@ -21,6 +21,7 @@ public class Calculadora  {
                 "7 - Fatorial\n" +
                 "8 - Trigonometria\n" +
                 "9 - Porcentagem\n" +
+                "10 - Conversao\n" +
                 "0 - Para sair da calculadora\n");
         System.out.println("Digite a opçao desejada:");
 
@@ -185,7 +186,41 @@ public class Calculadora  {
                 System.out.println("O valor de " + d1 + "% " + " de " + d2 + " eh " + resultado);
                 cont();
 
-                default:
+            case 10 :
+                System.out.println("Qual conversao voce deseja realizar:");
+                System.out.println("1 - Bases numericas\n" +
+                        "2 - Cambio\n" +
+                        "3 - Medidas\n");
+                n = teclado.nextInt();
+                if (n == 1){
+                    System.out.println("Qual base voce deseja converter?");
+                    System.out.println("1 - Binario para decimal\n" +
+                            "2 - Decimal para binario\n" +
+                            "3 - Octal para decimal\n" +
+                            "4 - Decimal para octal\n" +
+                            "5 - Hexadecimal para decimal\n" +
+                            "6 - Decimal para hexadecimal\n");
+                    n = teclado.nextInt();
+                    if (n == 1){
+                        System.out.println("Digite o numero binario:");
+                        String bin = teclado.next();
+                        int potencia = 0;
+                        int decimal = 0;
+                        for (int i = bin.length() - 1; i >= 0;i--){
+                            decimal += Math.pow(2,potencia) * Character.getNumericValue(bin.charAt(i));
+                            potencia++;
+                        }
+                        System.out.println("A conversao de " + bin + " para decimal eh " + decimal);
+                        cont();
+                        break;
+                    } else if (n == 2){
+                        System.out.println("Digite o numero em decimal");
+                        int dec = teclado.nextInt();
+                        resto(dec);
+                    }
+                }
+
+            default:
                 System.out.println("Opçao nao disponivel!!");
                 break;
         }
@@ -205,6 +240,17 @@ public class Calculadora  {
             default:
                 System.out.println("Opção indisponivel");
                 break;
+        }
+    }
+
+    public void resto(int n1){
+        int f = n1;
+        int x = 0;
+        while(f > 0){
+            f = n1 % 2;
+            x = f;
+            System.out.println(f);
+            resto(f);
         }
     }
 }
