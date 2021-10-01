@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Calculadora  {
 
-    Scanner teclado = new Scanner(System.in);
-    public double resultado;
+    Scanner keyboard = new Scanner(System.in);
+    public double result;
 
     public void act() {
         int n;
@@ -13,9 +13,9 @@ public class Calculadora  {
         double d1, d2;
         System.out.println("Qual calculadora voce deseja escolher?");
         System.out.println("1 - Cientifica\n" +
-                "2 - Porgramador\n" +
+                "2 - Programador\n" +
                 "3 - Conversor\n");
-        n = teclado.nextInt();
+        n = keyboard.nextInt();
 
         switch (n){
             case 1 :
@@ -33,80 +33,80 @@ public class Calculadora  {
                         "0 - Para sair da calculadora\n");
                 System.out.println("Digite a opçao desejada:");
 
-                n = teclado.nextInt();
+                n = keyboard.nextInt();
 
                 switch(n){
                     case 1:
                         System.out.println("Digite o primeiro numero: ");
-                        n1 = teclado.nextFloat();
+                        n1 = keyboard.nextFloat();
                         System.out.println("Digite o segundo numero: ");
-                        n2 = teclado.nextFloat();
-                        resultado = n1 + n2;
-                        System.out.println("O resultado da soma eh = " + resultado);
+                        n2 = keyboard.nextFloat();
+                        result = n1 + n2;
+                        System.out.println("O result da soma eh = " + result);
                         cont();
                         break;
 
                     case 2:
                         System.out.println("Digite o primeiro numero: ");
-                        n1 = teclado.nextFloat();
+                        n1 = keyboard.nextFloat();
                         System.out.println("Digite o segundo numero: ");
-                        n2 = teclado.nextFloat();
-                        resultado = n1 - n2;
-                        System.out.println("O resultado da subtraçao eh = " + resultado);
+                        n2 = keyboard.nextFloat();
+                        result = n1 - n2;
+                        System.out.println("O result da subtraçao eh = " + result);
                         cont();
                         break;
 
                     case 3:
                         System.out.println("Digite o primeiro numero: ");
-                        n1 = teclado.nextFloat();
+                        n1 = keyboard.nextFloat();
                         System.out.println("Digite o segundo numero: ");
-                        n2 = teclado.nextFloat();
-                        resultado = n1 * n2;
-                        System.out.println("O resultado da multiplicacao eh = " + resultado);
+                        n2 = keyboard.nextFloat();
+                        result = n1 * n2;
+                        System.out.println("O result da multiplicacao eh = " + result);
                         cont();
                         break;
 
                     case 4:
                         System.out.println("Digite o primeiro numero: ");
-                        n1 = teclado.nextFloat();
+                        n1 = keyboard.nextFloat();
                         System.out.println("Digite o segundo numero: ");
-                        n2 = teclado.nextFloat();
-                        resultado = n1 / n2;
-                        System.out.println("O resultado da divisao eh = " + resultado);
+                        n2 = keyboard.nextFloat();
+                        result = n1 / n2;
+                        System.out.println("O result da divisao eh = " + result);
                         cont();
                         break;
 
                     case 5 :
                         System.out.println("Digite o primeiro numero: ");
-                        d1 = teclado.nextDouble();
+                        d1 = keyboard.nextDouble();
                         System.out.println("Digite o segundo numero: ");
-                        d2 = teclado.nextDouble();
-                        resultado = Math.pow(d1,d2);
-                        System.out.println("O resultado da potenciaçao eh = " + resultado);
+                        d2 = keyboard.nextDouble();
+                        result = Math.pow(d1,d2);
+                        System.out.println("O result da potenciaçao eh = " + result);
                         cont();
                         break;
 
                     case 6 :
                         System.out.println("Digite o numero: ");
-                        d1 = teclado.nextDouble();
-                        resultado = Math.sqrt(d1);
-                        System.out.println("O resultado da raiz eh = " + resultado);
+                        d1 = keyboard.nextDouble();
+                        result = Math.sqrt(d1);
+                        System.out.println("O result da raiz eh = " + result);
                         cont();
                         break;
 
                     case 7 :
-                        resultado = 1;
+                        result = 1;
                         System.out.println("Digite o numero: ");
-                        d1 = teclado.nextDouble();
+                        d1 = keyboard.nextDouble();
                         if (d1 <= 0){
-                            System.out.println("Resultado invalido, tente novamente");
+                            System.out.println("result invalido, tente novamente");
                             act();
 
                         }
                         for (int i = 1; i <= d1; i++){
-                            resultado *= i;
+                            result *= i;
                         }
-                        System.out.println("O resultado do fatorial de " + d1 + " eh = " + resultado);
+                        System.out.println("O result do fatorial de " + d1 + " eh = " + result);
                         cont();
                         break;
 
@@ -118,31 +118,31 @@ public class Calculadora  {
                                 "4 - Cossecante de um numero\n" +
                                 "5 - Secante de um numero\n" +
                                 "6 - Cotangente de um numero\n");
-                        n = teclado.nextInt();
+                        n = keyboard.nextInt();
                         if (n == 1){
                             System.out.println("Digite o valor do angulo: ");
-                            d1 = teclado.nextDouble();
+                            d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             System.out.println("O seno de " + d1 + "º eh " + Math.sin(d3));
                             cont();
                             break;
                         } else if (n == 2){
                             System.out.println("Digite o valor do angulo: ");
-                            d1 = teclado.nextDouble();
+                            d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             System.out.println("O cosseno de " + d1 + "º eh " + Math.cos(d3));
                             cont();
                             break;
                         } else if (n == 3){
                             System.out.println("Digite o valor do angulo: ");
-                            d1 = teclado.nextDouble();
+                            d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             System.out.println("A tangente de " + d1 + "º eh " + Math.tan(d3));
                             cont();
                             break;
                         } else if (n == 4){
                             System.out.println("Digite o valor do angulo: ");
-                            d1 = teclado.nextDouble();
+                            d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             if (d1 == 0 || d1 == 180 || d1 == 360){
                                 System.out.println("Angulo indefinido");
@@ -156,7 +156,7 @@ public class Calculadora  {
                             }
                         } else if (n == 5){
                             System.out.println("Digite o valor do angulo: ");
-                            d1 = teclado.nextDouble();
+                            d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             double d4 = 1 / Math.cos(d3);
                             if (Math.cos(d3) == 0){
@@ -173,7 +173,7 @@ public class Calculadora  {
                             break;
                         } else if (n == 6){
                             System.out.println("Digite o valor do angulo: ");
-                            d1 = teclado.nextDouble();
+                            d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             double d4 = 1 / Math.tan(d3);
                             if (d1 == 0){
@@ -187,11 +187,11 @@ public class Calculadora  {
 
                     case 9 :
                         System.out.println("Digite o valor da porcentagem:");
-                        d1 = teclado.nextDouble();
+                        d1 = keyboard.nextDouble();
                         System.out.println("Digite o valor do numero:");
-                        d2 = teclado.nextDouble();
-                        resultado = d2 * (d1/100);
-                        System.out.println("O valor de " + d1 + "% " + " de " + d2 + " eh " + resultado);
+                        d2 = keyboard.nextDouble();
+                        result = d2 * (d1/100);
+                        System.out.println("O valor de " + d1 + "% " + " de " + d2 + " eh " + result);
                         cont();
 
                     default :
@@ -199,24 +199,21 @@ public class Calculadora  {
                         break;
         }
 
-
             case 2 :
                 System.out.println("Voce escolheu a calculadora de programador!!!");
-                System.out.println("Qual conversao voce deseja realizar:");
-                System.out.println("1 - Bases numericas\n");
-                n = teclado.nextInt();
-                if (n == 1){
-                    System.out.println("Qual base voce deseja converter?");
+                System.out.println("A calculadora de programador se baseia em fazer conversoes " +
+                        "entre bases numericas diferentes");
+                    System.out.println("Qual base voce deseja converter?\n");
                     System.out.println("1 - Binario para decimal\n" +
                             "2 - Decimal para binario\n" +
                             "3 - Octal para decimal\n" +
                             "4 - Decimal para octal\n" +
                             "5 - Hexadecimal para decimal\n" +
                             "6 - Decimal para hexadecimal\n");
-                    n = teclado.nextInt();
+                    n = keyboard.nextInt();
                     if (n == 1){
                         System.out.println("Digite o numero binario:");
-                        String bin = teclado.next();
+                        String bin = keyboard.next();
                         int potencia = 0;
                         int decimal = 0;
                         for (int i = bin.length() - 1; i >= 0;i--){
@@ -228,42 +225,135 @@ public class Calculadora  {
                         break;
                     } else if (n == 2){
                         System.out.println("Digite o numero em decimal");
-                        int dec = teclado.nextInt();
+                        int dec = keyboard.nextInt();
+                        String bin = Integer.toBinaryString(dec);
                         System.out.println("A conversao de " + dec + " para a base binaria eh: ");
-                        resto(dec);
+                        System.out.println(bin);
+                        System.out.println("\n--------------\n");
+                        cont();
+                        break;
+                    } else if (n == 3){
+                        System.out.println("Digite o numero em octal");
+                        String oct = keyboard.next();
+                        int potencia = 0;
+                        int decimal = 0;
+                        for (int i = oct.length() - 1; i >= 0;i--){
+                            decimal += Math.pow(8,potencia) * Character.getNumericValue(oct.charAt(i));
+                            potencia++;
+                        }
+                        System.out.println("A conversao de " + oct + " em octal para decimal eh " + decimal);
+                        cont();
+                        break;
+                    } else if (n == 4){
+                        System.out.println("Digite o numero em decimal");
+                        int dec = keyboard.nextInt();
+                        String oct = Integer.toOctalString(dec);
+                        System.out.println("A conversao de " + dec + " para a base octal eh: ");
+                        System.out.println(oct);
+                        System.out.println("\n--------------\n");
+                        cont();
+                        break;
+                    } else if (n == 5){
+                        System.out.println("Digite o numero em hexadecimal");
+                        String hex = keyboard.next();
+                        int potencia = 0;
+                        int decimal = 0;
+                        for (int i = hex.length() - 1; i >= 0;i--){
+                            decimal += Math.pow(16,potencia) * Character.getNumericValue(hex.charAt(i));
+                            potencia++;
+                        }
+                        System.out.println("A conversao de " + hex + " em hexa para decimal eh " + decimal);
+                        cont();
+                        break;
+                    } else if (n == 6){
+                        System.out.println("Digite o numero em decimal");
+                        int dec = keyboard.nextInt();
+                        String hex = Integer.toHexString(dec);
+                        System.out.println("A conversao de " + dec + " para a base hexadecimal eh: ");
+                        System.out.println(hex);
                         System.out.println("\n--------------\n");
                         cont();
                         break;
                     }
+
+            case 3 :
+                System.out.println("You chosen the conversion calculator");
+                System.out.println("What do you wanna to convert?");
+                System.out.println("1 - Currency\n" +
+                        "2 - Volume\n" +
+                        "3 - Length\n" +
+                        "4 - Weight\n" +
+                        "5 - Temperature\n");
+
+                n = keyboard.nextInt();
+                switch (n){
+                    case 1 :
+                        System.out.println("Which currency you want to convert?");
+                        System.out.println("1 - USA dollar\n" +
+                                "2 - BR real\n" +
+                                "3 - Japan yen\n" +
+                                "4 - EU euro\n" +
+                                "5 - UK pound\n" +
+                                "6 - CH Yuan\n");
+                        n = keyboard.nextInt();
+                        switch (n){
+                            case 1 :
+                                System.out.println("Which currency you want to convert the US dollar?");
+                                System.out.println("1 - BR real\n" +
+                                        "2 - Japan yen\n" +
+                                        "3 - EU euro\n" +
+                                        "4 - UK pound\n" +
+                                        "5 - CH Yuan\n");
+                                n = keyboard.nextInt();
+                                switch (n) {
+                                    case 1 :
+                                        System.out.println("Put the amount of money:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 5.44;
+                                        System.out.println(d1 + "$ dollars is equal to " + result + " R$ reais \n");
+                                        cont();
+                                        break;
+
+                                    case 2 :
+                                        System.out.println("Put the amount of money:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 111.26;
+                                        System.out.println(d1 + "$ dollars is equal to " + result + " ¥ yens \n");
+                                        cont();
+                                        break;
+                                }
+                        }
                 }
 
-            default:
-                System.out.println("Opçao nao disponivel!!");
+                    default:
+                System.out.println("Option not available!!");
                 break;
         }
+
     }
 
+   /* public void resto(int n1) {
+        if (n1 > 0) {
+            resto(n1 / 2);
+            System.out.print(n1 % 2);
+        }
+    }
+    */
+
     public void cont(){
-        System.out.println("Deseja continuar? Se sim digite 1 se nao digite 0");
+        System.out.println("Wish to continue? If yes press 1, if not press 0");
         int n;
-        n = teclado.nextInt();
+        n = keyboard.nextInt();
         switch (n){
         case 0 :
-            System.out.println("Obrigado por usar a calculadora, volte sempre!");
+            System.out.println("Thank you for using the calculator, come back soon!");
             break;
         case 1 :
             act();
 
             default:
-                System.out.println("Opção indisponivel");
+                System.out.println("Option not available");
                 break;
-        }
-    }
-
-    public void resto(int n1){
-        if (n1 > 0){
-            resto(n1 / 2);
-            System.out.print(n1 % 2);
         }
     }
 }
