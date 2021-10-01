@@ -310,7 +310,7 @@ public class Calculadora  {
                                         System.out.println("Put the amount of money:");
                                         d1 = keyboard.nextDouble();
                                         result = d1 * 5.44;
-                                        System.out.println(d1 + "$ dollars is equal to " + result + " R$ reais \n");
+                                        System.out.println(d1 + "$ dollars is equal to " + result + "R$ reais \n");
                                         cont();
                                         break;
 
@@ -318,9 +318,12 @@ public class Calculadora  {
                                         System.out.println("Put the amount of money:");
                                         d1 = keyboard.nextDouble();
                                         result = d1 * 111.26;
-                                        System.out.println(d1 + "$ dollars is equal to " + result + " ¥ yens \n");
+                                        System.out.println(d1 + "$ dollars is equal to " + result + "¥ yens \n");
                                         cont();
                                         break;
+
+                                    case 3 :
+                                        
                                 }
                         }
                 }
