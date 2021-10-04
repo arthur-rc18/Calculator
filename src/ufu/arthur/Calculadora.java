@@ -307,7 +307,7 @@ public class Calculadora  {
                                 n = keyboard.nextInt();
                                 switch (n) {
                                     case 1 :
-                                        System.out.println("Put the amount of money:");
+                                        System.out.println("Type the amount of dollars: ");
                                         d1 = keyboard.nextDouble();
                                         result = d1 * 5.44;
                                         System.out.println(d1 + "$ dollars is equal to " + result + "R$ reais \n");
@@ -315,7 +315,7 @@ public class Calculadora  {
                                         break;
 
                                     case 2 :
-                                        System.out.println("Put the amount of money:");
+                                        System.out.println("Type the amount of dollars: ");
                                         d1 = keyboard.nextDouble();
                                         result = d1 * 111.26;
                                         System.out.println(d1 + "$ dollars is equal to " + result + "¥ yens \n");
@@ -323,7 +323,65 @@ public class Calculadora  {
                                         break;
 
                                     case 3 :
-                                        
+                                        System.out.println("Type the amount of dollars: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.86;
+                                        System.out.println(d1 + "$ dollars is equal to " + result + "€ euros \n");
+                                        cont();
+                                        break;
+
+                                    case 4 :
+                                        System.out.println("Type the amount of dollars: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.73;
+                                        System.out.println(d1 + "$ dollars is equal to " + result + "£ pounds \n");
+                                        cont();
+                                        break;
+
+                                    case 5 :
+                                        System.out.println("Type the amount of dollars: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 6.45;
+                                        System.out.println(d1 + "$ dollars is equal to " + result + "¥ yuan \n");
+                                        cont();
+                                        break;
+
+                                    default:
+                                        System.out.println("Option not available!!");
+                                        break;
+                                }
+                            case 2 :
+                                System.out.println("Which currency you want to convert the BR real?");
+                                System.out.println("1 - US dollar\n" +
+                                        "2 - Japan yen\n" +
+                                        "3 - EU euro\n" +
+                                        "4 - UK pound\n" +
+                                        "5 - CH Yuan\n");
+                                n = keyboard.nextInt();
+                                switch (n) {
+                                    case 1:
+                                        System.out.println("Type the amount of real: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.18;
+                                        System.out.println(d1 + "R$ reals is equal to " + result + "$ dollars \n");
+                                        cont();
+                                        break;
+
+                                    case 2 :
+                                        System.out.println("Type the amount of real: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 20.34;
+                                        System.out.println(d1 + "R$ reals is equal to " + result + "¥ yens \n");
+                                        cont();
+                                        break;
+
+                                    case 3 :
+                                        System.out.println("Type the amount of real: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.16;
+                                        System.out.println(d1 + "R$ reals is equal to " + result + "€ euros \n");
+                                        cont();
+                                        break;
                                 }
                         }
                 }
