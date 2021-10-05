@@ -457,7 +457,7 @@ public class Calculadora  {
                                         break;
                                 }
                             case 4 :
-                                System.out.println("Which currency you want to convert the EU euro yen?");
+                                System.out.println("Which currency you want to convert the EU euro?");
                                 System.out.println("1 - US dollar\n" +
                                         "2 - BR real\n" +
                                         "3 - Japan yen\n" +
@@ -510,7 +510,7 @@ public class Calculadora  {
                                         break;
                                 }
                             case 5 :
-                                System.out.println("Which currency you want to convert the UK pound yen?");
+                                System.out.println("Which currency you want to convert the UK pound ?");
                                 System.out.println("1 - US dollar\n" +
                                         "2 - BR real\n" +
                                         "3 - Japan yen\n" +
@@ -530,7 +530,7 @@ public class Calculadora  {
                                         System.out.println("Type the amount of pounds: ");
                                         d1 = keyboard.nextDouble();
                                         result = d1 * 7.42;
-                                        System.out.println(d1 + "£ pounds is equal to " + result + "BR real \n");
+                                        System.out.println(d1 + "£ pounds is equal to " + result + "R$ real \n");
                                         cont();
                                         break;
 
@@ -562,8 +562,61 @@ public class Calculadora  {
                                         System.out.println("Option not available!!");
                                         break;
                                 }
-                            case 6 :     
+                            case 6 :
+                                System.out.println("Which currency you want to convert the CH yuan?");
+                                System.out.println("1 - US dollar\n" +
+                                        "2 - BR real\n" +
+                                        "3 - Japan yen\n" +
+                                        "4 - EU euro\n" +
+                                        "5 - UK pound\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
+                                        System.out.println("Type the amount of yuan: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.16;
+                                        System.out.println(d1 + "¥ yuan is equal to " + result + "$ dollars \n");
+                                        cont();
+                                        break;
+
+                                    case 2 :
+                                        System.out.println("Type the amount of yuan: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.85;
+                                        System.out.println(d1 + "¥ yuan is equal to " + result + "R$ real \n");
+                                        cont();
+                                        break;
+
+                                    case 3 :
+                                        System.out.println("Type the amount of yuan: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 17.30;
+                                        System.out.println(d1 + "¥ yuan is equal to " + result + "¥ yens \n");
+                                        cont();
+                                        break;
+
+                                    case 4 :
+                                        System.out.println("Type the amount of yuan: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.13;
+                                        System.out.println(d1 + "¥ yuan is equal to " + result + "€ euros \n");
+                                        cont();
+                                        break;
+
+                                    case 5 :
+                                        System.out.println("Type the amount of yuan: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.11;
+                                        System.out.println(d1 + "¥ yuan is equal to " + result + "£ pounds \n");
+                                        cont();
+                                        break;
+
+                                    default:
+                                        System.out.println("Option not available!!");
+                                        break;
+                                }
                         }
+                    case 2 :
                 }
 
                 default:
@@ -588,13 +641,13 @@ public class Calculadora  {
         switch (n){
         case 0 :
             System.out.println("Thank you for using the calculator, come back soon!");
-            break;
+            System.exit(0);
         case 1 :
             act();
 
             default:
                 System.out.println("Option not available");
-                break;
+                System.exit(0);
         }
     }
 }
