@@ -382,13 +382,193 @@ public class Calculadora  {
                                         System.out.println(d1 + "R$ reals is equal to " + result + "€ euros \n");
                                         cont();
                                         break;
+
+                                    case 4 :
+                                        System.out.println("Type the amount of real: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.13;
+                                        System.out.println(d1 + "R$ reals is equal to " + result + "£ pounds \n");
+                                        cont();
+                                        break;
+
+                                    case 5 :
+                                        System.out.println("Type the amount of real: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1.18;
+                                        System.out.println(d1 + "R$ reals is equal to " + result + "¥ yuan \n");
+                                        cont();
+                                        break;
+
+                                    default:
+                                        System.out.println("Option not available!!");
+                                        break;
                                 }
+                            case 3 :
+                                System.out.println("Which currency you want to convert the Japan yen?");
+                                System.out.println("1 - US dollar\n" +
+                                        "2 - BR real\n" +
+                                        "3 - EU euro\n" +
+                                        "4 - UK pound\n" +
+                                        "5 - CH Yuan\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
+                                        System.out.println("Type the amount of yen: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.009;
+                                        System.out.println(d1 + "¥ yens is equal to " + result + "$ dollars \n");
+                                        cont();
+                                        break;
+
+                                    case 2 :
+                                        System.out.println("Type the amount of yen: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.049;
+                                        System.out.println(d1 + "¥ yens is equal to " + result + "R$ reals \n");
+                                        cont();
+                                        break;
+
+                                    case 3 :
+                                        System.out.println("Type the amount of yen: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.0078;
+                                        System.out.println(d1 + "¥ yens is equal to " + result + "€ euros \n");
+                                        cont();
+                                        break;
+
+                                    case 4 :
+                                        System.out.println("Type the amount of yen: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.0066;
+                                        System.out.println(d1 + "¥ yens is equal to " + result + "£ pounds \n");
+                                        cont();
+                                        break;
+
+                                    case 5 :
+                                        System.out.println("Type the amount of yen: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.058;
+                                        System.out.println(d1 + "¥ yens is equal to " + result + "¥ yuan \n");
+                                        cont();
+                                        break;
+
+                                    default:
+                                        System.out.println("Option not available!!");
+                                        break;
+                                }
+                            case 4 :
+                                System.out.println("Which currency you want to convert the EU euro yen?");
+                                System.out.println("1 - US dollar\n" +
+                                        "2 - BR real\n" +
+                                        "3 - Japan yen\n" +
+                                        "4 - UK pound\n" +
+                                        "5 - CH Yuan\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
+                                        System.out.println("Type the amount of euros: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1.16;
+                                        System.out.println(d1 + "€ euros is equal to " + result + "$ dollars \n");
+                                        cont();
+                                        break;
+
+                                    case 2 :
+                                        System.out.println("Type the amount of euros: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 6.34;
+                                        System.out.println(d1 + "€ euros is equal to " + result + "R$ reals \n");
+                                        cont();
+                                        break;
+
+                                    case 3 :
+                                        System.out.println("Type the amount of euros: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 128.88;
+                                        System.out.println(d1 + "€ euros is equal to " + result + "¥ yens \n");
+                                        cont();
+                                        break;
+
+                                    case 4 :
+                                        System.out.println("Type the amount of euros: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.85;
+                                        System.out.println(d1 + "€ euros is equal to " + result + "£ pounds \n");
+                                        cont();
+                                        break;
+
+                                    case 5 :
+                                        System.out.println("Type the amount of euros: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 7.49;
+                                        System.out.println(d1 + "€ euros is equal to " + result + "¥ yuan \n");
+                                        cont();
+                                        break;
+
+                                    default:
+                                        System.out.println("Option not available!!");
+                                        break;
+                                }
+                            case 5 :
+                                System.out.println("Which currency you want to convert the UK pound yen?");
+                                System.out.println("1 - US dollar\n" +
+                                        "2 - BR real\n" +
+                                        "3 - Japan yen\n" +
+                                        "4 - EU euro\n" +
+                                        "5 - CH Yuan\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
+                                        System.out.println("Type the amount of pounds: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1.36;
+                                        System.out.println(d1 + "£ pounds is equal to " + result + "$ dollars \n");
+                                        cont();
+                                        break;
+
+                                    case 2 :
+                                        System.out.println("Type the amount of pounds: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 7.42;
+                                        System.out.println(d1 + "£ pounds is equal to " + result + "BR real \n");
+                                        cont();
+                                        break;
+
+                                    case 3 :
+                                        System.out.println("Type the amount of pounds: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 150.96;
+                                        System.out.println(d1 + "£ pounds is equal to " + result + "¥ yens \n");
+                                        cont();
+                                        break;
+
+                                    case 4 :
+                                        System.out.println("Type the amount of pounds: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1.17;
+                                        System.out.println(d1 + "£ pounds is equal to " + result + "€ euros \n");
+                                        cont();
+                                        break;
+
+                                    case 5 :
+                                        System.out.println("Type the amount of pounds: ");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 8.77;
+                                        System.out.println(d1 + "£ pounds is equal to " + result + "¥ yuan \n");
+                                        cont();
+                                        break;
+
+                                    default:
+                                        System.out.println("Option not available!!");
+                                        break;
+                                }
+                            case 6 :     
                         }
                 }
 
-                    default:
-                System.out.println("Option not available!!");
-                break;
+                default:
+                    System.out.println("Option not available!!");
+                    break;
         }
 
     }
