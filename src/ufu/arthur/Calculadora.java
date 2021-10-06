@@ -11,191 +11,193 @@ public class Calculadora  {
         int n;
         float n1, n2;
         double d1, d2;
-        System.out.println("Qual calculadora voce deseja escolher?");
-        System.out.println("1 - Cientifica\n" +
-                "2 - Programador\n" +
-                "3 - Conversor\n");
+        System.out.println("Which calculator do you wanna use?");
+        System.out.println("1 - Scientific\n" +
+                "2 - Developer\n" +
+                "3 - Conversion\n");
         n = keyboard.nextInt();
 
         switch (n){
             case 1 :
-                System.out.println("Voce escolheu a calculadora cientifica!!!");
-                System.out.println("Escolha qual operaçao voce deseja realizar: ");
-                System.out.println("1 - Soma\n" +
-                        "2 - Subtraçao\n" +
-                        "3 - Multiplicaçao\n" +
-                        "4 - Divisao\n" +
-                        "5 - Potencia\n" +
-                        "6 - Raiz quadrada\n" +
-                        "7 - Fatorial\n" +
-                        "8 - Trigonometria\n" +
-                        "9 - Porcentagem\n" +
-                        "0 - Para sair da calculadora\n");
-                System.out.println("Digite a opçao desejada:");
+                System.out.println("You chose the scientific calculator!!!");
+                System.out.println("Which operation you want to make? ");
+                System.out.println("1 - Sum\n" +
+                        "2 - Subtraction\n" +
+                        "3 - Multiplication\n" +
+                        "4 - Division\n" +
+                        "5 - Potency\n" +
+                        "6 - Square root\n" +
+                        "7 - Factorial\n" +
+                        "8 - Trigonometry\n" +
+                        "9 - Percentage\n" +
+                        "0 - To leave calculator\n");
+                System.out.println("Type the option you wish:");
 
                 n = keyboard.nextInt();
 
                 switch(n){
                     case 1:
-                        System.out.println("Digite o primeiro numero: ");
+                        System.out.println("Type the first number: ");
                         n1 = keyboard.nextFloat();
-                        System.out.println("Digite o segundo numero: ");
+                        System.out.println("Type the second number: ");
                         n2 = keyboard.nextFloat();
                         result = n1 + n2;
-                        System.out.println("O result da soma eh = " + result);
+                        System.out.println("The result of the sum is = " + result);
                         cont();
                         break;
 
                     case 2:
-                        System.out.println("Digite o primeiro numero: ");
+                        System.out.println("Type the first number: ");
                         n1 = keyboard.nextFloat();
-                        System.out.println("Digite o segundo numero: ");
+                        System.out.println("Type the second number: ");
                         n2 = keyboard.nextFloat();
                         result = n1 - n2;
-                        System.out.println("O result da subtraçao eh = " + result);
+                        System.out.println("The result os the subtraction is = " + result);
                         cont();
                         break;
 
                     case 3:
-                        System.out.println("Digite o primeiro numero: ");
+                        System.out.println("Type the first number: ");
                         n1 = keyboard.nextFloat();
-                        System.out.println("Digite o segundo numero: ");
+                        System.out.println("Type the second number: ");
                         n2 = keyboard.nextFloat();
                         result = n1 * n2;
-                        System.out.println("O result da multiplicacao eh = " + result);
+                        System.out.println("The result of the multiplication is = " + result);
                         cont();
                         break;
 
                     case 4:
-                        System.out.println("Digite o primeiro numero: ");
+                        System.out.println("Type the first number: ");
                         n1 = keyboard.nextFloat();
-                        System.out.println("Digite o segundo numero: ");
+                        System.out.println("Type the second number: ");
                         n2 = keyboard.nextFloat();
                         result = n1 / n2;
-                        System.out.println("O result da divisao eh = " + result);
+                        System.out.println("The result of the division is = " + result);
                         cont();
                         break;
 
                     case 5 :
-                        System.out.println("Digite o primeiro numero: ");
+                        System.out.println("Type the first number: ");
                         d1 = keyboard.nextDouble();
-                        System.out.println("Digite o segundo numero: ");
+                        System.out.println("Type the second number: ");
                         d2 = keyboard.nextDouble();
                         result = Math.pow(d1,d2);
-                        System.out.println("O result da potenciaçao eh = " + result);
+                        System.out.println("The result of the potency is = " + result);
                         cont();
                         break;
 
                     case 6 :
-                        System.out.println("Digite o numero: ");
+                        System.out.println("Type the number: ");
                         d1 = keyboard.nextDouble();
                         result = Math.sqrt(d1);
-                        System.out.println("O result da raiz eh = " + result);
+                        System.out.println("The square root of " + d1 + " is = " + result);
                         cont();
                         break;
 
                     case 7 :
                         result = 1;
-                        System.out.println("Digite o numero: ");
+                        System.out.println("Type the number: ");
                         d1 = keyboard.nextDouble();
                         if (d1 <= 0){
-                            System.out.println("result invalido, tente novamente");
+                            System.out.println("Invalid number, try it again");
                             act();
 
                         }
                         for (int i = 1; i <= d1; i++){
                             result *= i;
                         }
-                        System.out.println("O result do fatorial de " + d1 + " eh = " + result);
+                        System.out.println("The factorial of " + d1 + " is = " + result);
                         cont();
                         break;
 
                     case 8 :
-                        System.out.println("Qual operaçao voce deseja realizar:");
-                        System.out.println("1 - Seno de um angulo\n" +
-                                "2 - Cosseno de um angulo\n" +
-                                "3 - Tangente de um angulo\n" +
-                                "4 - Cossecante de um numero\n" +
-                                "5 - Secante de um numero\n" +
-                                "6 - Cotangente de um numero\n");
+                        System.out.println("You chose trigonometry!!");
+                        System.out.println("Which operation you wanna make it?:");
+                        System.out.println("1 - Sin of an angle\n" +
+                                "2 - Cos of an angle\n" +
+                                "3 - Tan of an angle\n" +
+                                "4 - Cosecant of a number\n" +
+                                "5 - Secant of a number\n" +
+                                "6 - Cotangent of a number\n");
                         n = keyboard.nextInt();
                         if (n == 1){
-                            System.out.println("Digite o valor do angulo: ");
+                            System.out.println("Type the value of the angle: ");
                             d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
-                            System.out.println("O seno de " + d1 + "º eh " + Math.sin(d3));
+                            System.out.println("The sin of " + d1 + "º is " + Math.sin(d3));
                             cont();
                             break;
                         } else if (n == 2){
-                            System.out.println("Digite o valor do angulo: ");
+                            System.out.println("Type the value of the angle: ");
                             d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
-                            System.out.println("O cosseno de " + d1 + "º eh " + Math.cos(d3));
+                            System.out.println("The cos of " + d1 + "º is " + Math.cos(d3));
                             cont();
                             break;
                         } else if (n == 3){
-                            System.out.println("Digite o valor do angulo: ");
+                            System.out.println("Type the value of the angle: ");
                             d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
-                            System.out.println("A tangente de " + d1 + "º eh " + Math.tan(d3));
+                            System.out.println("The tan of " + d1 + "º is " + Math.tan(d3));
                             cont();
                             break;
                         } else if (n == 4){
-                            System.out.println("Digite o valor do angulo: ");
+                            System.out.println("Type the value of the angle: ");
                             d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             if (d1 == 0 || d1 == 180 || d1 == 360){
-                                System.out.println("Angulo indefinido");
+                                System.out.println("Undefined angle");
                                 cont();
                                 break;
                             } else if (d1 != 0) {
                                 double d4 = 1 / Math.sin(d3);
-                                System.out.println("A cossecante de " + d3 + "º eh " + d4);
+                                System.out.println("The cosecant of " + d3 + "º is " + d4);
                                 cont();
 
                             }
                         } else if (n == 5){
-                            System.out.println("Digite o valor do angulo: ");
+                            System.out.println("Type the value of the angle: ");
                             d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             double d4 = 1 / Math.cos(d3);
                             if (Math.cos(d3) == 0){
-                                System.out.println("Angulo indefinido");
+                                System.out.println("Undefined angle");
                                 cont();
                                 break;
                             } else if (d1 == 90 || d1 == 270){
-                                System.out.println("Angulo indefinido");
+                                System.out.println("Undefined angle");
                                 cont();
                                 break;
                             } else
-                                System.out.println("A secante de " + d3 + "º eh " + d4);
+                                System.out.println("The secant of " + d3 + "º is " + d4);
                             cont();
                             break;
                         } else if (n == 6){
-                            System.out.println("Digite o valor do angulo: ");
+                            System.out.println("Type the value of the angle: ");
                             d1 = keyboard.nextDouble();
                             double d3 = Math.toRadians(d1);
                             double d4 = 1 / Math.tan(d3);
                             if (d1 == 0){
-                                System.out.println("Angulo indefinido");
+                                System.out.println("Undefined angle");
                                 cont();
                                 break;
                             }
-                            System.out.println("A cotangente de " + d3 + "º eh " + d4);
+                            System.out.println("The cotangent of " + d3 + "º is " + d4);
                             cont();
                         }
 
                     case 9 :
-                        System.out.println("Digite o valor da porcentagem:");
+                        System.out.println("Type the value of the percentage:");
                         d1 = keyboard.nextDouble();
-                        System.out.println("Digite o valor do numero:");
+                        System.out.println("Type the value of the number:");
                         d2 = keyboard.nextDouble();
                         result = d2 * (d1/100);
-                        System.out.println("O valor de " + d1 + "% " + " de " + d2 + " eh " + result);
+                        System.out.println("The value of " + d1 + "% " + " of " + d2 + " is " + result);
                         cont();
 
                     default :
-                        System.out.println("Opçao indisponivel");
+                        System.out.println("Unavailable Option");
+                        cont();
                         break;
         }
 
