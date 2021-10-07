@@ -2,7 +2,7 @@ package ufu.arthur;
 
 import java.util.Scanner;
 
-public class Calculadora  {
+public class Calculator {
 
     Scanner keyboard = new Scanner(System.in);
     public double result;
@@ -25,7 +25,7 @@ public class Calculadora  {
                         "2 - Subtraction\n" +
                         "3 - Multiplication\n" +
                         "4 - Division\n" +
-                        "5 - Potency\n" +
+                        "5 - Exponentiation\n" +
                         "6 - Square root\n" +
                         "7 - Factorial\n" +
                         "8 - Trigonometry\n" +
@@ -82,7 +82,7 @@ public class Calculadora  {
                         System.out.println("Type the second number: ");
                         d2 = keyboard.nextDouble();
                         result = Math.pow(d1,d2);
-                        System.out.println("The result of the potency is = " + result);
+                        System.out.println("The result of the Exponentiation is = " + result);
                         cont();
                         break;
 
@@ -202,76 +202,76 @@ public class Calculadora  {
         }
 
             case 2 :
-                System.out.println("Voce escolheu a calculadora de programador!!!");
-                System.out.println("A calculadora de programador se baseia em fazer conversoes " +
-                        "entre bases numericas diferentes");
-                    System.out.println("Qual base voce deseja converter?\n");
-                    System.out.println("1 - Binario para decimal\n" +
-                            "2 - Decimal para binario\n" +
-                            "3 - Octal para decimal\n" +
-                            "4 - Decimal para octal\n" +
-                            "5 - Hexadecimal para decimal\n" +
-                            "6 - Decimal para hexadecimal\n");
+                System.out.println("You chose the developer calculator!!!");
+                System.out.println("The developer calculator is based in making conversions " +
+                        "between different numerical bases");
+                    System.out.println("Which base you wish to convert?\n");
+                    System.out.println("1 - Binary to decimal\n" +
+                            "2 - Decimal to binary\n" +
+                            "3 - Octal to decimal\n" +
+                            "4 - Decimal to octal\n" +
+                            "5 - Hexadecimal to decimal\n" +
+                            "6 - Decimal to hexadecimal\n");
                     n = keyboard.nextInt();
                     if (n == 1){
-                        System.out.println("Digite o numero binario:");
+                        System.out.println("Type the number binary:");
                         String bin = keyboard.next();
-                        int potencia = 0;
+                        int exponentiation = 0;
                         int decimal = 0;
                         for (int i = bin.length() - 1; i >= 0;i--){
-                            decimal += Math.pow(2,potencia) * Character.getNumericValue(bin.charAt(i));
-                            potencia++;
+                            decimal += Math.pow(2,exponentiation) * Character.getNumericValue(bin.charAt(i));
+                            exponentiation++;
                         }
-                        System.out.println("A conversao de " + bin + " para decimal eh " + decimal);
+                        System.out.println("The conversion of " + bin + " in binary to decimal is " + decimal);
                         cont();
                         break;
                     } else if (n == 2){
-                        System.out.println("Digite o numero em decimal");
+                        System.out.println("Type the number in decimal");
                         int dec = keyboard.nextInt();
                         String bin = Integer.toBinaryString(dec);
-                        System.out.println("A conversao de " + dec + " para a base binaria eh: ");
+                        System.out.println("the conversion of " + dec + " to the binary base is: ");
                         System.out.println(bin);
                         System.out.println("\n--------------\n");
                         cont();
                         break;
                     } else if (n == 3){
-                        System.out.println("Digite o numero em octal");
+                        System.out.println("Type the number in octal");
                         String oct = keyboard.next();
-                        int potencia = 0;
+                        int exponentiation = 0;
                         int decimal = 0;
                         for (int i = oct.length() - 1; i >= 0;i--){
-                            decimal += Math.pow(8,potencia) * Character.getNumericValue(oct.charAt(i));
-                            potencia++;
+                            decimal += Math.pow(8,exponentiation) * Character.getNumericValue(oct.charAt(i));
+                            exponentiation++;
                         }
-                        System.out.println("A conversao de " + oct + " em octal para decimal eh " + decimal);
+                        System.out.println("The conversion of " + oct + " in octal to decimal is " + decimal);
                         cont();
                         break;
                     } else if (n == 4){
-                        System.out.println("Digite o numero em decimal");
+                        System.out.println("Type the number in decimal");
                         int dec = keyboard.nextInt();
                         String oct = Integer.toOctalString(dec);
-                        System.out.println("A conversao de " + dec + " para a base octal eh: ");
+                        System.out.println("The conversion of " + dec + " to the octal base is: ");
                         System.out.println(oct);
                         System.out.println("\n--------------\n");
                         cont();
                         break;
                     } else if (n == 5){
-                        System.out.println("Digite o numero em hexadecimal");
+                        System.out.println("Type the number in hexadecimal");
                         String hex = keyboard.next();
-                        int potencia = 0;
+                        int exponentiation = 0;
                         int decimal = 0;
                         for (int i = hex.length() - 1; i >= 0;i--){
-                            decimal += Math.pow(16,potencia) * Character.getNumericValue(hex.charAt(i));
-                            potencia++;
+                            decimal += Math.pow(16,exponentiation) * Character.getNumericValue(hex.charAt(i));
+                            exponentiation++;
                         }
-                        System.out.println("A conversao de " + hex + " em hexa para decimal eh " + decimal);
+                        System.out.println("The conversion of " + hex + " in hexadecimal to decimal is " + decimal);
                         cont();
                         break;
                     } else if (n == 6){
-                        System.out.println("Digite o numero em decimal");
+                        System.out.println("Type the number in decimal");
                         int dec = keyboard.nextInt();
                         String hex = Integer.toHexString(dec);
-                        System.out.println("A conversao de " + dec + " para a base hexadecimal eh: ");
+                        System.out.println("The conversion of " + dec + " to the hexadecimal base is: ");
                         System.out.println(hex);
                         System.out.println("\n--------------\n");
                         cont();
@@ -312,7 +312,7 @@ public class Calculadora  {
                                         System.out.println("Type the amount of dollars: ");
                                         d1 = keyboard.nextDouble();
                                         result = d1 * 5.44;
-                                        System.out.println(d1 + "$ dollars is equal to " + result + "R$ reais \n");
+                                        System.out.println(d1 + "$ dollars is equal to " + result + "R$ real \n");
                                         cont();
                                         break;
 
@@ -628,9 +628,9 @@ public class Calculadora  {
 
     }
 
-   /* public void resto(int n1) {
+   /* public void rest(int n1) {
         if (n1 > 0) {
-            resto(n1 / 2);
+            rest(n1 / 2);
             System.out.print(n1 % 2);
         }
     }
