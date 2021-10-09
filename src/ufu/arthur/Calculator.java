@@ -622,7 +622,7 @@ public class Calculator {
                         System.out.println("Which volume do you wish to convert");
                         System.out.println("1 - Liters\n" +
                                 "2 - m³\n" +
-                                "3 - c³\n" +
+                                "3 - cm³\n" +
                                 "4 - Milliliters\n" +
                                 "5 - ft³\n" +
                                 "6 - yard³");
@@ -631,7 +631,7 @@ public class Calculator {
                             case 1 :
                                 System.out.println("Which volume do you want to convert the liters?");
                                 System.out.println("1 - m³\n" +
-                                        "2 - c³" +
+                                        "2 - cm³\n" +
                                         "3 - Milliliters\n" +
                                         "4 - ft³\n" +
                                         "5 - yard³\n");
@@ -645,7 +645,11 @@ public class Calculator {
                                         cont();
 
                                     case 2 :
-                                        
+                                        System.out.println("Type the amount of liters");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1000;
+                                        System.out.println(d1 + " liters is equal to " + result + " cm³");
+                                        cont();
                                 }
                         }
                 }
