@@ -1,5 +1,6 @@
 package ufu.arthur;
 
+import java.awt.geom.Area;
 import java.util.Scanner;
 
 public class Calculator {
@@ -650,6 +651,9 @@ public class Calculator {
                                         result = d1 * 1000;
                                         System.out.println(d1 + " liters is equal to " + result + " cm³");
                                         cont();
+
+                                    case 3 :
+                                        
                                 }
                         }
                 }
