@@ -687,7 +687,25 @@ public class Calculator {
                                 n = keyboard.nextInt();
                                 switch (n){
                                     case 1 :
-                                        
+                                        System.out.println("Type the amount of m³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1000;
+                                        System.out.println(d1 + " m³ is equal to " + result + " liters");
+                                        cont();
+
+                                    case 2 :
+                                        System.out.println("Type the amount of m³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1000000;
+                                        System.out.println(d1 + " m³ is equal to " + result + " cm³");
+                                        cont();
+
+                                    case 3 :
+                                        System.out.println("Type the amount of m³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1000000;
+                                        System.out.println(d1 + " m³ is equal to " + result + " milliliters");
+                                        cont();
                                 }
                         }
                 }
