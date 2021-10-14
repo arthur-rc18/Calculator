@@ -653,6 +653,40 @@ public class Calculator {
                                         cont();
 
                                     case 3 :
+                                        System.out.println("Type the amount of liters");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1000;
+                                        System.out.println(d1 + " liters is equal to " + result + " milliliter");
+                                        cont();
+
+                                    case 4 :
+                                        System.out.println("Type the amount of liters");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.0353147;
+                                        System.out.println(d1 + " liters is equal to " + result + " ft³");
+                                        cont();
+
+                                    case 5 :
+                                        System.out.println("Type the amount of liters");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.00130795;
+                                        System.out.println(d1 + " liters is equal to " + result + " yard³");
+                                        cont();
+
+                                    default :
+                                        System.out.println("Option not available");
+                                        cont();
+                                }
+                            case 2 :
+                                System.out.println("Which volume do you want to convert the m³?");
+                                System.out.println("1 - liters\n" +
+                                        "2 - cm³\n" +
+                                        "3 - Milliliters\n" +
+                                        "4 - ft³\n" +
+                                        "5 - yard³\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
                                         
                                 }
                         }
