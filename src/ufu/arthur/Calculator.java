@@ -742,6 +742,47 @@ public class Calculator {
                                         cont();
 
                                     case 2 :
+                                        System.out.println("Type the amount of cm³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1000000;
+                                        System.out.println(d1 + " cm³ is equal to " + result + " m³");
+                                        cont();
+
+                                    case 3 :
+                                        System.out.println("Type the amount of cm³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1;
+                                        System.out.println(d1 + " cm³ is equal to " + result + " milliliters");
+                                        cont();
+
+                                    case 4 :
+                                        System.out.println("Type the amount of cm³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 3.53147;
+                                        System.out.println(d1 + " cm³ is equal to " + result + " ft³");
+                                        cont();
+
+                                    case 5 :
+                                        System.out.println("Type the amount of cm³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1.30795;
+                                        System.out.println(d1 + " cm³ is equal to " + result + " yard³");
+                                        cont();
+
+                                    default :
+                                        System.out.println("Option unavailable");
+                                        cont();
+                                }
+                            case 4 :
+                                System.out.println("Which volume do you want to convert the milliliters?");
+                                System.out.println("1 - liters\n" +
+                                        "2 - m³\n" +
+                                        "3 - c³\n" +
+                                        "4 - ft³\n" +
+                                        "5 - yard³\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    
                                 }
                         }
                 }
