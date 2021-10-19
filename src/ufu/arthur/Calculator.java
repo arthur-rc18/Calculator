@@ -706,6 +706,42 @@ public class Calculator {
                                         result = d1 * 1000000;
                                         System.out.println(d1 + " m³ is equal to " + result + " milliliters");
                                         cont();
+
+                                    case 4 :
+                                        System.out.println("Type the amount of m³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 35.3147;
+                                        System.out.println(d1 + " m³ is equal to " + result + " ft³");
+                                        cont();
+
+                                    case 5 :
+                                        System.out.println("Type the amount of m³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1.307;
+                                        System.out.println(d1 + " m³ is equal to " + result + " yard³");
+                                        cont();
+
+                                    default :
+                                        System.out.println("Option not available");
+                                        cont();
+                                }
+                            case 3 :
+                                System.out.println("Which volume do you want to convert the cm³?");
+                                System.out.println("1 - liters\n" +
+                                        "2 - m³\n" +
+                                        "3 - Milliliters\n" +
+                                        "4 - ft³\n" +
+                                        "5 - yard³\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
+                                        System.out.println("Type the amount of cm³");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.001;
+                                        System.out.println(d1 + " cm³ is equal to " + result + " liters");
+                                        cont();
+
+                                    case 2 :
                                 }
                         }
                 }
