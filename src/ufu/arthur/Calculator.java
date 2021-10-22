@@ -782,7 +782,12 @@ public class Calculator {
                                         "5 - yard³\n");
                                 n = keyboard.nextInt();
                                 switch (n){
-                                    
+                                    case 1 :
+                                        System.out.println("Type the amount of milliliters:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.001;
+                                        System.out.println(d1 + " milliliters is equal to " + result + " liters");
+                                        cont();
                                 }
                         }
                 }
