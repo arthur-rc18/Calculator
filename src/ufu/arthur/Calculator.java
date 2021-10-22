@@ -1,6 +1,5 @@
 package ufu.arthur;
 
-import java.awt.geom.Area;
 import java.util.Scanner;
 
 public class Calculator {
@@ -777,7 +776,7 @@ public class Calculator {
                                 System.out.println("Which volume do you want to convert the milliliters?");
                                 System.out.println("1 - liters\n" +
                                         "2 - m³\n" +
-                                        "3 - c³\n" +
+                                        "3 - cm³\n" +
                                         "4 - ft³\n" +
                                         "5 - yard³\n");
                                 n = keyboard.nextInt();
@@ -787,6 +786,20 @@ public class Calculator {
                                         d1 = keyboard.nextDouble();
                                         result = d1 * 0.001;
                                         System.out.println(d1 + " milliliters is equal to " + result + " liters");
+                                        cont();
+
+                                    case 2 :
+                                        System.out.println("Type the amount of milliliters:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 / 1000000;
+                                        System.out.println(d1 + " milliliters is equal to " + result + " m³");
+                                        cont();
+
+                                    case 3 :
+                                        System.out.println("Type the amount of milliliters:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 1;
+                                        System.out.println(d1 + " milliliters is equal to " + result + " cm³");
                                         cont();
                                 }
                         }
