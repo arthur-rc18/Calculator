@@ -878,6 +878,43 @@ public class Calculator {
                                 n = keyboard.nextInt();
                                 switch (n){
                                     case 1 :
+                                        System.out.println("Type the amount of yard³:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 764.555;
+                                        System.out.println(d1 + " yard³ is equal to " + result + " liters");
+                                        cont();
+
+                                    case 2 :
+                                        System.out.println("Type the amount of yard³:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.764555;
+                                        System.out.println(d1 + " yard³ is equal to " + result + " m³");
+                                        cont();
+
+                                    case 3 :
+                                        System.out.println("Type the amount of yard³:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 764555;
+                                        System.out.println(d1 + " yard³ is equal to " + result + " cm³");
+                                        cont();
+
+                                    case 4 :
+                                        System.out.println("Type the amount of yard³:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 764555;
+                                        System.out.println(d1 + " yard³ is equal to " + result + " milliliters");
+                                        cont();
+
+                                    case 5 :
+                                        System.out.println("Type the amount of yard³:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 27;
+                                        System.out.println(d1 + " yard³ is equal to " + result + " ft³");
+                                        cont();
+
+                                    default :
+                                        System.out.println("Option not available");
+                                        cont();
                                 }
                         }
                 }
