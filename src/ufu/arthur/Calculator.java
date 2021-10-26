@@ -917,6 +917,88 @@ public class Calculator {
                                         cont();
                                 }
                         }
+                    case 3 :
+                        System.out.println("Which length you want to convert?");
+                        System.out.println("1 - Carat" +
+                                "2 - Gram\n" +
+                                "3 - Kilogram\n" +
+                                "4 - Ounce\n" +
+                                "5 - Lbs\n" +
+                                "6 - Tonne\n");
+                        n = keyboard.nextInt();
+                        switch (n){
+                            case 1 :
+                                System.out.println("Which length do you wanna convert the carats?");
+                                System.out.println("1 - Gram\n" +
+                                        "2 - Kilogram\n" +
+                                        "3 - Ounce\n" +
+                                        "4 - Lbs\n" +
+                                        "5 - Tonne\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
+                                        System.out.println("Type the amount of carat:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.2;
+                                        System.out.println(d1 + " carats is equal to " + result + " grams");
+                                        cont();
+
+                                    case 2 :
+                                        System.out.println("Type the amount of carat:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.0002;
+                                        System.out.println(d1 + " carats is equal to " + result + " kilos");
+                                        cont();
+
+                                    case 3 :
+                                        System.out.println("Type the amount of carat:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.00705479;
+                                        System.out.println(d1 + " carats is equal to " + result + " ounces");
+                                        cont();
+
+                                    case 4 :
+                                        System.out.println("Type the amount of carat:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.000440925;
+                                        System.out.println(d1 + " carats is equal to " + result + " lbs");
+                                        cont();
+
+                                    case 5 :
+                                        System.out.println("Type the amount of carat:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.0000002;
+                                        System.out.println(d1 + " carats is equal to " + result + " tonnes");
+                                        cont();
+
+                                    default :
+                                        System.out.println("Option not available");
+                                        cont();
+                                }
+                            case 2 :
+                                System.out.println("Which length do you wanna convert the grams?");
+                                System.out.println("1 - Carat\n" +
+                                        "2 - Kilogram\n" +
+                                        "3 - Ounce\n" +
+                                        "4 - Lbs\n" +
+                                        "5 - Tonne\n");
+                                n = keyboard.nextInt();
+                                switch (n){
+                                    case 1 :
+                                        System.out.println("Type the amount of grams:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 5;
+                                        System.out.println(d1 + " grams is equal to " + result + " carats");
+                                        cont();
+
+                                    case 2 :
+                                        System.out.println("Type the amount of grams:");
+                                        d1 = keyboard.nextDouble();
+                                        result = d1 * 0.001;
+                                        System.out.println(d1 + " grams is equal to " + result + " kilograms");
+                                        cont();
+                                }
+                        }
                 }
 
                 default:
