@@ -997,6 +997,14 @@ public class Calculator {
                                         result = d1 * 0.001;
                                         System.out.println(d1 + " grams is equal to " + result + " kilograms");
                                         cont();
+
+                                    case 3 :
+                                        System.out.println("Poha");
+                                        d1 = keyboard.nextDouble();
+                                        d2 = keyboard.nextDouble();
+                                        result = d1 % d2;
+                                        System.out.println(result);
+                                        cont();
                                 }
                         }
                 }
