@@ -997,7 +997,7 @@ public class Calculator {
                                         result = d1 * 0.001;
                                         System.out.println(d1 + " grams is equal to " + result + " kilograms");
                                         cont();
-                                        
+    
                                 }
                         }
                 }
